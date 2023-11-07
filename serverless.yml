@@ -1,4 +1,4 @@
-service: notes-api
+service: kr-api
 frameworkVersion: "2"
 
 provider:
