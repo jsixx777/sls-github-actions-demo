@@ -1,4 +1,7 @@
 # Notes dynamodb table
+
+Resources:
+
 notesTable:
   Type: AWS::DynamoDB::Table
   Properties:
