@@ -1,4 +1,4 @@
-service: kr-api
+service: kenny-rodgers-api
 frameworkVersion: "2"
 #push#push
 provider:
