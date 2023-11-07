@@ -1,6 +1,6 @@
 service: kenny-rodgers-api
 frameworkVersion: "2"
-#push
+#push#push
 provider:
   name: aws
   runtime: nodejs14.x
