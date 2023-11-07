@@ -3,7 +3,7 @@ Resources:
   notesTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: notes-${self:provider.stage}
+      TableName: notes-foldem-${self:provider.stage}
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions:
         - AttributeName: notesId
