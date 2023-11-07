@@ -15,7 +15,7 @@ Resources:
   cognitoUserPool:
     Type: AWS::Cognito::UserPool
     Properties:
-      UserPoolName: MyNotesUP-${self:provider.stage}
+      UserPoolName: KennyRodgers-${self:provider.stage}
 
   cognitoUserPoolWebclient:
     Type: AWS::Cognito::UserPoolClient
@@ -39,7 +39,7 @@ Resources:
     Type: AWS::Cognito::UserPoolDomain
     Properties:
       UserPoolId: !Ref cognitoUserPool
-      Domain: mynotescd-${self:provider.stage}
+      Domain: kennyrodgers-${self:provider.stage}
 
   userPoolArnParam:
     Type: AWS::SSM::Parameter
