@@ -82,4 +82,4 @@ plugins:
 
 # you can add CloudFormation resource templates here
 resources:
-  Resources: ${file(resources.yml)}
+  - ${file(resources.yml)}
