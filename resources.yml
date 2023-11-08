@@ -33,7 +33,7 @@ Resources:
       AllowedOAuthFlows:
         - implicit
       CallbackURLs:
-        - http://localhost:3000
+        - http://localhost:4000
 
   cognitoUserPoolDomain:
     Type: AWS::Cognito::UserPoolDomain

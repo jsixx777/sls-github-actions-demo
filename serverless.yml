@@ -71,11 +71,13 @@ functions:
         Resource: !GetAtt notesTable.Arn
     events:
       - http:
-          method: get
           path: notes
-          authorizer:
+          method: get
+          cors: true 
+          authorizer: 
             name: userpool_authorizer
-            arn: ${ssm:/kenny/${self:provider.stage}/userPoolArn}
+            type: COGNITO_USER_POOLS
+            arn: !GetAtt cognitoUserPool.Arn 
 
 plugins:
   - serverless-iam-roles-per-function
